@@ -1,5 +1,7 @@
 var drawTopItems = function (context) {
-  // For drawing the lines
+  var chartType = document.getElementById("ChartType");
+
+  chartType.innerHTML = "Populiariausios prekės";
 
   var ctx = document.getElementById("myChart");
   var myChart = new Chart(ctx, {
@@ -38,7 +40,9 @@ var drawTopItems = function (context) {
 }
 
 var drawTopRegions = function () {
-  // For drawing the lines
+  var chartType = document.getElementById("ChartType");
+
+  chartType.innerHTML = "Populiariausi regionai";
 
   var ctx = document.getElementById("myChart");
   var myChart = new Chart(ctx, {
@@ -77,7 +81,9 @@ var drawTopRegions = function () {
 }
 
 var drawOneItem = function () {
-  // For drawing the lines
+  var chartType = document.getElementById("ChartType");
+
+  chartType.innerHTML = "Vienos prekės populiarumas";
 
   var ctx = document.getElementById("myChart");
   var myChart = new Chart(ctx, {
@@ -96,7 +102,9 @@ var drawOneItem = function () {
 }
 
 var drawTopMatches = function () {
-  // For drawing the lines
+  var chartType = document.getElementById("ChartType");
+
+  chartType.innerHTML = "Kartu perkamos";
 
   var ctx = document.getElementById("myChart");
   var myChart = new Chart(ctx, {
@@ -115,7 +123,9 @@ var drawTopMatches = function () {
 }
 
 var drawSum = function () {
-  // For drawing the lines
+  var chartType = document.getElementById("ChartType");
+
+  chartType.innerHTML = "Čekio suma";
 
   var ctx = document.getElementById("myChart");
   var myChart = new Chart(ctx, {
@@ -133,7 +143,9 @@ var drawSum = function () {
 }
 
 var drawItemMatches = function () {
-  // For drawing the lines
+  var chartType = document.getElementById("ChartType");
+
+  chartType.innerHTML = "Prekių suderinamumas";
 
   var ctx = document.getElementById("myChart");
   var myChart = new Chart(ctx, {

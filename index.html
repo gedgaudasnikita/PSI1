@@ -8,12 +8,15 @@
   <body>
     <div class="wrapper">
       <h1>Pardavimų analizė</h1>
-      <button onclick="drawTopItems(document.body)">Populiariausios prekės</button>
-      <button onclick="drawTopRegions(document.body)">Populiariausi regionai</button>
-      <button onclick="drawOneItem(document.body)">Vienos prekės populiarumas</button>
-      <button onclick="drawTopMatches(document.body)">Kartu perkamos</button>
-      <button onclick="drawSum(document.body)">Čekio suma</button>
-      <button onclick="drawItemMatches(document.body)">Prekių suderinamumas</button>
+      <button onclick="drawTopItems()">Populiariausios prekės</button>
+      <button onclick="drawTopRegions()">Populiariausi regionai</button>
+      <button onclick="drawOneItem()">Vienos prekės populiarumas</button>
+      <button onclick="drawTopMatches()">Kartu perkamos</button>
+      <button onclick="drawSum()">Čekio suma</button>
+      <button onclick="drawItemMatches()">Prekių suderinamumas</button>
+
+      
+      <h3 id="ChartType"></h3>
 
       <canvas id="myChart" width="1600" height="900"></canvas>
     </div>
