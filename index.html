@@ -2,23 +2,27 @@
 <html>
   <head>
     <title>World population</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <div class="wrapper">
+    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:15%">
       <h1>Pardavimų analizė</h1>
-      <button class ="button" onclick="drawTopItems()">Populiariausios prekės</button>
-      <button class ="button" onclick="drawTopRegions()">Populiariausi regionai</button>
-      <button class ="button" onclick="drawOneItem()">Vienos prekės populiarumas</button>
-      <button class ="button" onclick="drawTopMatches()">Kartu perkamos</button>
-      <button class ="button" onclick="drawSum()">Čekio suma</button>
-      <button class ="button" onclick="drawItemMatches()">Prekių suderinamumas</button>
+      <button class ="button button1" onclick="drawTopItems()">Populiariausios prekės</button>
+      <button class ="button button1" onclick="drawTopRegions()">Populiariausi regionai</button>
+      <button class ="button button1" onclick="drawOneItem()">Vienos prekės populiarumas</button>
+      <button class ="button button1" onclick="drawTopMatches()">Kartu perkamos</button>
+      <button class ="button button1" onclick="drawSum()">Čekio suma</button>
+      <button class ="button button1" onclick="drawItemMatches()">Prekių suderinamumas</button>
+    </div>
 
-      
-      <h3 id="ChartType"></h3>
-
-      <canvas id="myChart" width="1600" height="900"></canvas>
+    <div style="margin-left:15%" >
+      <div class="w3-container">
+        <h3 id="ChartType"></h3>
+        <canvas id="myChart" width="1600" height="900"></canvas>
+      </div>
     </div>
 
     <script src="script.js"></script>
