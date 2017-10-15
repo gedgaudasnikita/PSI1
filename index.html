@@ -8,8 +8,11 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:15%">
-      <h1>Pardavimų analizė</h1>
+    <div id="mySidenav" class="sidenav">
+      <div style="font-size:30px;cursor:pointer">
+        Menu
+      </div>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <button class ="button button1" onclick="drawTopItems()">Populiariausios prekės</button>
       <button class ="button button1" onclick="drawTopRegions()">Populiariausi regionai</button>
       <button class ="button button1" onclick="drawOneItem()">Vienos prekės populiarumas</button>
@@ -18,7 +21,12 @@
       <button class ="button button1" onclick="drawItemMatches()">Prekių suderinamumas</button>
     </div>
 
-    <div style="margin-left:15%" >
+    
+  <div align = "left">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()" >&#9776;  Menu</span>
+  </div>
+
+    <div id="main"  >
       <div class="w3-container">
         <h3 id="ChartType"></h3>
         <canvas id="myChart" width="1600" height="900"></canvas>
