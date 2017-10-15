@@ -182,3 +182,8 @@ var drawItemMatches = function () {
     }
   });
 }
+
+var login = function()
+            {
+                window.location = 'index.html'
+            }
