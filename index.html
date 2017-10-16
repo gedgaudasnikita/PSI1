@@ -4,12 +4,18 @@
     <title>World population</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js">
+    </script>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <div id="mySidenav" class="sidenav">
-      <div style="font-size:30px;cursor:pointer">
+
+    <div class="container" align="right">
+   <button class="button" onClick="logout()">Log out</button>
+  </div>
+
+    <div id="mySidenav" class="sidenav" >
+      <div style="font-size:30px;cursor:pointer" >
         Menu
       </div>
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -21,9 +27,25 @@
       <button class ="button button1" onclick="drawItemMatches()">Prekių suderinamumas</button>
     </div>
 
+    <div id="mySidenav2" class="sidenavright" >
+      <div style="font-size:30px;cursor:pointer" >
+        Parinktys
+      </div>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+      <button class ="button button1" >Pasirinkite prekes</button>
+      <button class ="button button1" >Pasirinkite regioną</button>
+      <button class ="button button1" >Pasirinkite laiko intervalą</button>
+    </div>
+
+    
+
     
   <div align = "left">
   <span style="font-size:30px;cursor:pointer" onclick="openNav()" >&#9776;  Menu</span>
+  </div>
+
+  <div align = "left">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav2()" >&#9776;  Parinktys</span>
   </div>
 
     <div id="main"  >
