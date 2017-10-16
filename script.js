@@ -196,13 +196,13 @@ var logout = function()
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    document.body.style.backgroundColor = "rgba(0,0,0,0)";
 }
 
 function openNav2() {
     document.getElementById("mySidenav2").style.width = "250px";
     document.getElementById("main2").style.marginLeft = "250px";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    document.body.style.backgroundColor = "rgba(0,0,0,0)";
 }
 
 function closeNav() {
