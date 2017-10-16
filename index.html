@@ -11,8 +11,10 @@
   <body>
 
     <div class="container" align="right">
-   <button class="button" onClick="logout()">Log out</button>
-  </div>
+   <button class="button" onClick="logout()">Log out</button></div>
+
+
+  
 
     <div id="mySidenav" class="sidenav" >
       <div style="font-size:30px;cursor:pointer" >
@@ -27,23 +29,14 @@
       <button class ="button button1" onclick="drawItemMatches()">Prekių suderinamumas</button>
     </div>
 
-    <div id="mySidenav2" class="sidenavright" >
-      <div style="font-size:30px;cursor:pointer" >
-        Parinktys
-      </div>
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
-      <button class ="button button1" >Pasirinkite prekes</button>
-      <button class ="button button1" >Pasirinkite regioną</button>
-      <button class ="button button1" >Pasirinkite laiko intervalą</button>
-    </div>
+    
+      
+   
     
   <div align = "left">
   <span style="font-size:30px;cursor:pointer" onclick="openNav()" >&#9776;  Menu</span>
   </div>
 
-  <div align = "left">
-  <span style="font-size:30px;cursor:pointer" onclick="openNav2()" >&#9998;  Parinktys</span>
-  </div>
 
     <div id="main"  >
       <div class="w3-container">
@@ -51,6 +44,12 @@
         <canvas id="myChart" width="1600" height="900"></canvas>
       </div>
     </div>
+
+    <div class="container" align="center">
+    <button class ="button" >Pasirinkite prekes</button>
+      <button class ="button" >Pasirinkite regioną</button>
+      <button class ="button" >Pasirinkite laiko intervalą</button>
+  </div>
 
     <script src="script.js"></script>
   </body>
