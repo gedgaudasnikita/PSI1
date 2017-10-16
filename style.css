@@ -41,7 +41,7 @@ body {
     position: fixed;
     z-index: 1;
     top: 0;
-    left: 0;
+    right: 0;
     background-color: #008CBA;
     overflow-x: hidden;
     transition: 0.5s;
@@ -57,9 +57,20 @@ body {
     display: block;
     transition: 0.3s;
 }
+.sidenavright a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 5px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+}
 
 
 .sidenav a:hover {
+    color: #f1f1f1;
+}
+.sidenavright a:hover {
     color: #f1f1f1;
 }
 
@@ -86,6 +97,8 @@ body {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+  .sidenavright {padding-top: 15px;}
+  .sidenavright a {font-size: 18px;}
 }
 
 h1 {
