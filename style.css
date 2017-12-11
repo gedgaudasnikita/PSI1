@@ -2,6 +2,23 @@ body {
   font-family: Helvetica Neue, Arial, sans-serif;
   text-align: center;
 }
+ body, html {
+              height: 100%;
+              margin: 0;
+          }
+
+          .bg {
+              /* The image used */
+              background-image: url("bgimage.jpg");
+
+              /* Full height */
+              height: 100%; 
+
+              /* Center and scale the image nicely */
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+          }
 
 .wrapper {
   max-width: 800px;
