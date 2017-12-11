@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js">
     </script>
+    
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <style>
@@ -36,6 +37,7 @@
         <button onclick="myFunction()" class="dropbtn">Pasirinkite prekes</button>
           <div id="myDropdown" class="dropdown-content" >
             <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+            <button class="button" onclick="myFunction()"> Ok </button>
             <a  href="#about">Duona</a>
             <a href="#base">Cukrus</a>
             <a href="#blog">Kefyras</a>
@@ -47,6 +49,7 @@
           <button onclick="myFunction2()" class="dropbtn">Pasirinkite regioną</button>
           <div id="myDropdown2" class="dropdown-content">
             <input type="text" placeholder="Search.." id="myInput2" onkeyup="filterFunction2()">
+            <button class="button" onclick="myFunction2()"> Ok </button>
             <a href="#about">Vilniaus</a>
             <a href="#base">Klaipedos</a>
             <a href="#blog">Kauno</a>
@@ -60,6 +63,7 @@
             <p><input type="text" placeholder="YYYY-MM-DD" id="myInput3">
             <p> Iki
             <p><input type="text" placeholder="YYYY-MM-DD" id="myInput3">
+            <p><button class="button" onclick="myFunction3()"> Ok
             
           </div>
       </span>
@@ -88,12 +92,18 @@
       </div>
     </div>
 
-
-    <div id ="saveBtn" style= "display:none" align="right">
-       <button class="button"  >Issaugoti</button>
-    </div>
-
-
+<span id ="saveBtn" style ="display:none" class="dropdown" align ="center">
+<button onclick="myFunction4()" class="dropbtn">Issaugoti</button>
+          <span id="myDropdown4" class="dropdown-content">
+             <button class="button2"> .jpg
+            <button class="button2"> .png
+            <button class="button2"> .xls
+             <button class="button2" > Siusti el. laiska
+            <button class="button2" > Spausdinti
+            
+            
+          </span>
+</span>
 
     <script src="script.js"></script>
   </body>
