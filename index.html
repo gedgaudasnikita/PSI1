@@ -8,36 +8,74 @@
     </script>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
+  <style>
+</style>
   <body>
 
-    <div align="right">
-      <button class="button" onClick="logout()">Atsijungti</button>
-      <p>Vardenis Pavardenis
-    </div>
+      <div style="height: 45px;">
+        
+        <span style="font-size:30px;cursor:pointer; float:left;"  onclick="openNav()" > &#9776;  Meniu</span>
+        <span style="float:center">
+          <font size="10">&#9962</font>
+        </span>
 
- <div align = "left">
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()" >&#9776;  Meniu</span>
-  </div>
-
-   <div align="center">
-    <p><font size="10">&#9962</font>
-    <p><font size="3">Parduotuves pavadinimas</font>
-   </div>
+        <button style="float:right;" class="button"  onClick="logout()">Atsijungti</button>
+      
+      </div>
 
 
-  
+      <div >
+        <p align="right" > Vardenis Pavardenis </p>
+      </div>
+
+      <div style="float:center">
+        <font size="3">Parduotuves pavadinimas</font>
+      </div>
+
+      <span id ="parameters" style ="display:none" class="dropdown" align ="center">
+        <button onclick="myFunction()" class="dropbtn">Pasirinkite prekes</button>
+          <div id="myDropdown" class="dropdown-content" >
+            <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+            <a  href="#about">Duona</a>
+            <a href="#base">Cukrus</a>
+            <a href="#blog">Kefyras</a>
+            <a href="#blog">Kiausiniai</a>
+            <a href="#blog">Sviestas</a>
+           
+          </div>
+          
+          <button onclick="myFunction2()" class="dropbtn">Pasirinkite regioną</button>
+          <div id="myDropdown2" class="dropdown-content">
+            <input type="text" placeholder="Search.." id="myInput2" onkeyup="filterFunction2()">
+            <a href="#about">Vilniaus</a>
+            <a href="#base">Klaipedos</a>
+            <a href="#blog">Kauno</a>
+            <a href="#blog">Siauliu</a>
+            <a href="#blog">Utenos</a>
+   
+          </div>
+          <button onclick="myFunction3()" class="dropbtn">Pasirinkite laiko intervalą</button>
+          <div id="myDropdown3" class="dropdown-content">
+            <p> Nuo
+            <p><input type="text" placeholder="YYYY-MM-DD" id="myInput3">
+            <p> Iki
+            <p><input type="text" placeholder="YYYY-MM-DD" id="myInput3">
+            
+          </div>
+      </span>
+
 
     <div id="mySidenav" class="sidenav" >
       <div style="font-size:30px;cursor:pointer" >
         Menu
       </div>
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <button class ="button button1" onclick="drawTopItems()">Populiariausios prekės</button>
-      <button class ="button button1" onclick="drawTopRegions()">Populiariausi regionai</button>
-      <button class ="button button1" onclick="drawOneItem()">Vienos prekės populiarumas</button>
-      <button class ="button button1" onclick="drawTopMatches()">Kartu perkamos</button>
-      <button class ="button button1" onclick="drawSum()">Čekio suma</button>
-      <button class ="button button1" onclick="drawItemMatches()">Prekių suderinamumas</button>
+      <button class ="button button1" onclick="drawTopItems(); selectParam(); ">Populiariausios prekės</button>
+      <button class ="button button1" onclick="drawTopRegions(); selectParam(); ">Populiariausi regionai</button>
+      <button class ="button button1" onclick="drawOneItem(); selectParam(); ">Vienos prekės populiarumas</button>
+      <button class ="button button1" onclick="drawTopMatches(); selectParam(); ">Kartu perkamos</button>
+      <button class ="button button1" onclick="drawSum(); selectParam(); ">Čekio suma</button>
+      <button class ="button button1" onclick="drawItemMatches(); selectParam(); ">Prekių suderinamumas</button>
     </div>
 
  
@@ -50,11 +88,12 @@
       </div>
     </div>
 
-    <div class="container" align="center">
-    <button class ="button" >Pasirinkite prekes</button>
-      <button class ="button" >Pasirinkite regioną</button>
-      <button class ="button" >Pasirinkite laiko intervalą</button>
-  </div>
+
+    <div id ="saveBtn" style= "display:none" align="right">
+       <button class="button"  >Issaugoti</button>
+    </div>
+
+
 
     <script src="script.js"></script>
   </body>

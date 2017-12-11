@@ -199,11 +199,6 @@ function openNav() {
     document.body.style.backgroundColor = "rgba(0,0,0,0)";
 }
 
-function openNav2() {
-    document.getElementById("mySidenav2").style.width = "250px";
-    document.getElementById("main2").style.marginLeft = "250px";
-    document.body.style.backgroundColor = "rgba(0,0,0,0)";
-}
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
@@ -211,8 +206,61 @@ function closeNav() {
     document.body.style.backgroundColor = "white";
 }
 
-function closeNav2() {
-    document.getElementById("mySidenav2").style.width = "0";
-    document.getElementById("main2").style.marginLeft= "0";
-    document.body.style.backgroundColor = "white";
+function selectParam() {
+  document.getElementById("parameters").style.display = "block";
+  document.getElementById("saveBtn").style.display = "block";
+}
+
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+function myFunction2() {
+    document.getElementById("myDropdown2").classList.toggle("show");
+}
+function myFunction3() {
+    document.getElementById("myDropdown3").classList.toggle("show");
+}
+
+function filterFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDropdown");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+        } else {
+            a[i].style.display = "none";
+        }
+    }
+}
+function filterFunction2() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput2");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDropdown2");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+        } else {
+            a[i].style.display = "none";
+        }
+    }
+}
+function filterFunction3() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput3");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDropdown3");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+        } else {
+            a[i].style.display = "none";
+        }
+    }
 }
