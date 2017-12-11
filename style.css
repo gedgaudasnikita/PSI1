@@ -23,6 +23,11 @@ body {
 .button1{
   width: 100%;
 }
+.button2{
+    background-color: #008555;
+    padding: 15px 32px;
+
+}
 
 
 .sidenav {
